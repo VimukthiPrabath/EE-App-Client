@@ -6,12 +6,26 @@
 
     <groupId>lk.javainstitute.ee</groupId>
     <artifactId>EE-App-Client</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.glassfish.main.extras</groupId>
+            <artifactId>glassfish-embedded-all</artifactId>
+            <version>7.0.21</version>
+        </dependency>
+        <dependency>
+            <groupId>lk.javainstitute.ee</groupId>
+            <artifactId>EE-Webapp</artifactId>
+            <version>1.0</version>
+            <type>ejb-client</type>
+        </dependency>
+    </dependencies>
 
 </project>
